@@ -24,7 +24,7 @@ class SQRServiceTest {
         SQRService Service  = new SQRService();
         int lowerlimit = 100;
         int upperlimit =  2000_00;
-        int expected = 3;
+        int expected = 89;
 
 
         int actual = Service.calcSquare(lowerlimit, upperlimit);
@@ -39,9 +39,9 @@ class SQRServiceTest {
     @Test
     public void shouldalcSquareBrokenTest() {
         SQRService Service  = new SQRService();
-        int lowerlimit = 200;
-        int upperlimit = 300;
-        int expected = 4;
+        int lowerlimit = 300;
+        int upperlimit = 400;
+        int expected = 2;
 
 
         int actual = Service.calcSquare(lowerlimit, upperlimit);
